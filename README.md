@@ -17,4 +17,5 @@ There is a demo video on youtube where you can see it running. Click on image be
 
 ## Addtional info
 -For now it runs only with Google Chrome
+
 -Your have to run it as Admin so it can store the data in your machine in order to diplat them on screen
