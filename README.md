@@ -8,5 +8,13 @@ This solution reads all the historical data from Yahoo Finance webpage for a sto
 You can either compile the solution by coling this repository or if you want to get the exe file reade to go please donlowad it from my website on link below <br>
 https://www.taskforbot.com.br/demo/histock
 
+### Watch a demo
+There is a demo video on youtube where you can see it running. Click on image below <br>
+
+[![Instaliker with Python and Kivy](https://github.com/alexdominguess/Histock-Python-Kivy/blob/master/Screenshots/screenshot5.png)](https://youtu.be/pt6GiIfyoPg "Youtube")
+
+
+
 ## Addtional info
-For now it runs only with Google Chrome
+-For now it runs only with Google Chrome
+-Your have to run it as Admin so it can store the data in your machine in order to diplat them on screen
