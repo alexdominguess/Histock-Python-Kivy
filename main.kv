@@ -1,0 +1,105 @@
+<StockWindow>
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint_y: None
+            height: 5
+            canvas.before:
+                Color:
+                    rgba:  .0, .760,.660,.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+       
+        BoxLayout:
+            size_hint_y: None
+            height: 50
+            canvas.before:
+                Color:
+                    rgba:  1,1,1,0.2
+                Rectangle:
+                    pos:self.pos
+                    size: self.size
+            GridLayout:
+                rows:1
+                cols:5
+                padding:40,10
+                spacing:40
+
+                TextInput:
+                    size_hint_x:None
+                    width:100
+                    id: cod_acao
+                    size_hint_y:None
+                    height:32
+                    multiline: False
+                    write_tab: False
+                    hint_text: 'Ação'
+
+                Spinner:
+                    size_hint_x:None
+                    width:100
+                    id: frequencia
+                    text: 'Frequência'
+                    values: ('Diário', 'Semanal', 'Mensal')
+                    size_hint_y:None
+                    height: 32
+
+                Button:
+                    size_hint: None, None
+                    size: 32, 32
+                    background_normal: "baixar.png"
+                    on_press: root.call_main()
+                Button:
+                    size_hint: None, None
+                    size: 32, 32
+                    background_normal: "disquete.png"
+                    on_press: root.export_data()
+
+
+        BoxLayout:
+            orientation:'vertical'
+            size_hint_y:None
+            height: 30
+            canvas.before:
+                Color:
+                    rgba: .0, .760,.660,.5
+                Rectangle:
+                    pos:self.pos
+                    size:self.size
+            BoxLayout:
+                Label:
+                    text: 'Data'
+                Label:
+                    text: 'Abertura'
+                Label:
+                    text: 'Máxima'
+                Label:
+                    text: 'Mínima'
+                Label:
+                    text: 'Fechamento'
+                Label:
+                    text: 'Ajuste'
+                Label:
+                    text: 'Volume'                           
+        ScrollView:
+            GridLayout:
+                padding:10
+                id: stok_info
+                size_hint_y: None #Need to have
+                height: self.minimum_height #need to have
+                cols:1
+        
+        BoxLayout:
+            size_hint_y: None
+            height: 20
+            canvas.before:
+                Color:
+                    rgba:  .0, .760,.660,.5
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            Label:
+                id: head_text
+                text: 'www.taskforbot.com.br'
+                
